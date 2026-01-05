@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AllCalculator</title>
 
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-59S5NK84GF"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,19 +14,25 @@
     gtag('config', 'G-59S5NK84GF');
   </script>
 
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
-
   <header class="flex items-center gap-3 px-6 py-4 bg-white border-b">
-    <img src="/app-logo.png" class="h-8 w-8" alt="AllCalculator Logo">
-    <span class="font-semibold text-gray-800">AllCalculator</span>
+    <img src="app-logo.png" class="h-8 w-8" alt="AllCalculator Logo">
+    <span class="font-semibold">AllCalculator</span>
   </header>
 
+  <main class="p-6">
+    <h1 class="text-2xl font-bold">Welcome</h1>
+    <p class="text-gray-600">Your calculators will live here.</p>
+  </main>
+
+  <!-- React root -->
   <div id="root"></div>
 
+  <!-- ✅ CORRECT ENTRY -->
   <script type="module" src="/src/main.tsx"></script>
-
 </body>
 </html>
